@@ -1,0 +1,15 @@
+Aluno: nome, data nascimento, matrícula, endereço
+
+Disciplina: nome, carga horária, ementa, pre_requisito(chave estrangeira(pode ser NULL))
+
+Professor: inicio contrato, nome, CPF, id_departamento(chave estrangeira(não pode ser NULL)
+
+Departamento: nome, id, local, cpf_professor_chefe(chave estrangeira(não pode ser NULL))
+
+Avaliação: data hora, comentário, nota, cpf_professor
+
+Contato_Professor: contato, cpf_professor(chave estrangeira)
+
+Disciplina_Professor: nome, cpf_professor(chave estrangeira)
+
+Disciplina_Aluno: matrícula, nome(chave estrangeira)
